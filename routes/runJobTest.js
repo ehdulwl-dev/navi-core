@@ -1,4 +1,4 @@
-const fetchSeoulJobs = require('./jobFetcher');
+const {fetchSeoulJobs} = require('./seoulApiFetcher');
 const upsertJobs = require('./jobService');
 
 (async () => {

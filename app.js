@@ -9,9 +9,10 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const resumesRouter = require('./routes/resumes');
 const jobsRouter = require('./routes/jobs');
+const educationsRouter = require('./routes/educations');
 
 // 💡 크론 스케줄러 실행
-require('./routes/jobScheduler');
+require('./routes/seoulApiScheduler');
 
 var app = express();
 
@@ -25,5 +26,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/resumes', resumesRouter);
 app.use('/api/jobs', jobsRouter);
+app.use('/api/educations', educationsRouter);
 
 module.exports = app;
