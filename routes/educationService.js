@@ -4,7 +4,7 @@ function formatEducationData(raw) {
     return {
         id: raw.JO_REGIST_NO,
         edc_sn: raw.EDC_SN,
-        title: raw.EDC_NM,
+        edc_nm: raw.EDC_NM,
         edc_begin_de_dt: raw.EDC_BEGIN_DE_DT,
         edc_end_de_dt: raw.EDC_END_DE_DT,
         edc_time_hm: raw.EDC_TIME_HM,
